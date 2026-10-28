@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café & Letras: cafés inspirados en grandes obras literarias.">
+  <title>Café & Letras | Un sorbo de literatura</title>
+  <link rel="preconnect" href="https://images.unsplash.com"><link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Café y Letras, inicio"><span class="brand-icon">☕</span><span>Café <i>&</i> Letras<small>UN SORBO DE IMAGINACIÓN</small></span></a>
+    <nav class="nav" aria-label="Navegación principal"><a href="#galeria">Inspiración</a><a href="#menu">Nuestra carta</a><button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">🌙 <span>Modo oscuro</span></button></nav>
+  </header>
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow">CAFETERÍA · LIBRERÍA · EXPERIENCIAS</p><h1 id="hero-title">Hay historias que se leen.<br><em>Otras se saborean.</em></h1><p>Un refugio para lectores, soñadores y amantes del café. Encontrá tu próxima historia favorita, taza en mano.</p><div class="hero-actions"><a class="button primary" href="#menu">Explorar la carta <span>↗</span></a><button id="new-quote" class="button secondary" type="button">✦ Una frase para hoy</button></div><p class="quote" id="daily-quote" aria-live="polite">“La literatura es una forma de felicidad.” <span>— Jorge Luis Borges</span></p></div><div class="hero-image"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1800&q=90" alt="Taza de café recién preparado en una cafetería acogedora"><div class="image-note"><span>✦</span><div><strong>Tu pausa favorita</strong><small>Un capítulo a la vez</small></div></div></div></section>
+    <section class="gallery-section" id="galeria"><div class="section-heading"><div><p class="eyebrow">UN UNIVERSO POR DESCUBRIR</p><h2>Inspiración en cada página</h2></div><div class="gallery-controls"><button type="button" id="gallery-left" aria-label="Desplazar galería hacia la izquierda">←</button><button type="button" id="gallery-right" aria-label="Desplazar galería hacia la derecha">→</button><button type="button" id="gallery-direction" aria-pressed="false">↕ Vertical</button></div></div><div class="gallery-track" id="gallery-track" tabindex="0" aria-label="Galería desplazable de café y literatura"></div></section>
+    <section class="menu-section" id="menu"><div class="section-heading menu-heading"><div><p class="eyebrow">LA CARTA LITERARIA</p><h2>Elegí tu próxima lectura…<br><em>y tu próximo café.</em></h2></div><p class="section-intro">Cada receta está inspirada en una obra. Descubrí sus ingredientes, la historia detrás de la taza y elegí tu favorita.</p></div><div class="menu-toolbar"><label for="coffee-search">Buscar en la carta <input id="coffee-search" type="search" placeholder="Ej.: Metamorfosis, canela…"></label><label for="coffee-filter">Filtrar por tipo <select id="coffee-filter"><option value="todos">Todos los cafés</option><option value="caliente">Calientes</option><option value="frio">Fríos</option><option value="sin-cafeina">Sin cafeína</option></select></label></div><div id="coffee-menu" class="coffee-grid" aria-live="polite"></div><p class="price-note">Precios de ejemplo en pesos argentinos (ARS), incluidos con fines demostrativos. Actualizalos según los costos reales del establecimiento.</p></section>
+    <section class="closing"><span class="closing-icon">❝</span><p>“Un libro, una taza y el tiempo detenido.”</p><span>En Café & Letras, cada pausa tiene una historia.</span><a class="button primary" href="#menu">Encontrá tu café</a></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-icon">☕</span><span>Café <i>&</i> Letras<small>UN SORBO DE IMAGINACIÓN</small></span></a><p>© <span id="year"></span> Café & Letras · Hecho para amantes de las historias.</p><a href="#inicio">Volver arriba ↑</a></footer>
+</body>
+
+</html>
